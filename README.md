@@ -131,3 +131,16 @@ git push -u origin main
 ## Example Artifact (Output)
 
 ![Word Cloud Example](docs/images/word_cloud_example.png)
+
+## Technical Modification
+
+### What I Changed
+I created my own version of the example files by copying `web_words_case.py` and `web_words_case.ipynb` to `web_words_sandra.py` and `web_words_sandra.ipynb`.
+
+I modified the script to display the top **20 most frequent words** instead of the top **10** in the bar chart visualization.
+
+### Why I Made This Change
+I made this change to observe how expanding the number of words displayed would affect the visualization and provide a more detailed view of the most common terms in the analyzed web page.
+
+### What I Observed
+After running the updated program, the output successfully displayed a larger list of frequent words and the bar chart included more vocabulary terms. The results provided a clearer picture of the dominant words appearing in the page text.
