@@ -172,7 +172,7 @@ df: pl.DataFrame = pl.DataFrame({"word": clean_words})
 # Function chain: group_by() -> len() -> sort()
 freq_df: pl.DataFrame = df.group_by("word").len().sort("len", descending=True)
 
-print("Top 20 most frequent words:")
+print("Top 25 most frequent words:")
 print(freq_df.head(25))
 
 # ============================================================
