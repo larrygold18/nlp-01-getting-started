@@ -172,8 +172,9 @@ df: pl.DataFrame = pl.DataFrame({"word": clean_words})
 # Function chain: group_by() -> len() -> sort()
 freq_df: pl.DataFrame = df.group_by("word").len().sort("len", descending=True)
 
-print("Top 25 most frequent words:")
-print(freq_df.head(25))
+print("Top 20 most frequent words:")
+print(freq_df.head(20))
+
 
 # ============================================================
 # Section 7. Build "Most Frequent Words" Bar Chart
@@ -199,7 +200,7 @@ ax = plt.gca()
 # to rotate 45 degrees for better readability,
 ax.tick_params(axis="x", labelrotation=45)
 
-plt.title("Top 20 Most Frequent Words in NLP Article")
+plt.title("Top 20 Most Frequent Words")
 plt.xlabel("Word")
 plt.ylabel("Frequency")
 plt.tight_layout()
@@ -225,7 +226,7 @@ for word, freq in list(freq_dict.items())[:10]:
 
 # Build a word cloud where larger words occur more frequently in the text.
 # Set width and height in pixels and set the background color.
-wc: WordCloud = WordCloud(width=1200, height=600, background_color="lightgray")
+wc: WordCloud = WordCloud(width=1200, height=600, background_color="blacl")
 
 # Generate the word cloud from the frequency dictionary.
 wc.generate_from_frequencies(freq_dict)

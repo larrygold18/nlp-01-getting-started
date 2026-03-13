@@ -135,7 +135,7 @@ git push -u origin main
 ## Technical Modification
 
 ### What I Changed
-I created my own version of the example files by copying `web_words_case.py` and `web_words_case.ipynb` to `web_words_sandra.py` and `web_words_sandra.ipynb`.
+I created my own version of the example files by copying `web_words_case.py` and `web_words_case.ipynb` to `web_words_sandra.py` and `web_words_sandra.ipynb`..
 
 I modified the script to display the top **20 most frequent words** instead of the top **10** in the bar chart visualization.
 
